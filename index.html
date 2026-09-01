@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de Gestão de Tráfego — Gelo Augusta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-ring"></div>
+            <span class="preloader-text">Carregando Proposta — Gelo Augusta</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">g</span>
+                <span class="logo-text">Gelo Augusta — Proposta</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Início</a></li>
+                <li><a href="#diagnostico" class="nav-link">Diagnóstico</a></li>
+                <li><a href="#estrategia" class="nav-link">Estratégia</a></li>
+                <li><a href="#resultados" class="nav-link">Resultados</a></li>
+                <li><a href="#investimento" class="nav-link">Investimento</a></li>
+                <li><a href="#contato" class="nav-link nav-cta">Fechar Proposta</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <img src="images/hero_bg.jpg" alt="Gelo Augusta Marisqueira Esplanada" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge animate-on-scroll">
+                <span class="badge-dot"></span>
+                Proposta Exclusiva — Setembro 2026
+            </div>
+            <h1 class="hero-title animate-on-scroll">
+                <span class="hero-title-line">Gestão de</span>
+                <span class="hero-title-line accent">Tráfego Pago</span>
+                <span class="hero-title-line small">para Gelo Augusta — Marisqueira & Cervejaria</span>
+            </h1>
+            <p class="hero-subtitle animate-on-scroll">
+                Uma estratégia personalizada de Google Ads e Google Meu Negócio para captar turistas e locais na Baixa de Lisboa — transformando pesquisas por marisco fresco, paellas ao vivo e cerveja artesanal em mesas cheias na Rua Augusta.
+            </p>
+            <div class="hero-actions animate-on-scroll">
+                <a href="#estrategia" class="btn btn-primary">
+                    <span>Ver Estratégia</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                </a>
+                <a href="#investimento" class="btn btn-outline">Ver Investimento</a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="hero-stat">
+                    <span class="stat-number">4.6<span class="stat-star">★</span></span>
+                    <span class="stat-label">Google Reviews</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-number">3.300+</span>
+                    <span class="stat-label">Seguidores</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="stat-number">Baixa</span>
+                    <span class="stat-label">Rua Augusta</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="sobre">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">O Restaurante</span>
+                <h2 class="section-title">Gelo Augusta</h2>
+                <p class="section-desc">Onde o melhor do mar e as cervejas artesanais se sentam à mesa na Rua Augusta</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card animate-on-scroll">
+                    <div class="about-card-icon">🦞</div>
+                    <h3>Mariscos Frescos & Sapateiras</h3>
+                    <p>Sapateira recheada artesanal, lagosta, camarão da costa e mariscadas completas preparadas diariamente com a frescura do oceano Atlântico.</p>
+                    <div class="about-card-footer">
+                        <span class="card-tag">Marisco Fresco</span>
+                        <span class="card-tag">Sapateira Recheada</span>
+                    </div>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <div class="about-card-icon">🥘</div>
+                    <h3>Paellas Artesanais & Live Cooking</h3>
+                    <p>Paella de marisco confecionada ao vivo em frigideira gigante na esplanada. Uma atração gastronómica que chama a atenção de quem passa.</p>
+                    <div class="about-card-footer">
+                        <span class="card-tag">Live Cooking</span>
+                        <span class="card-tag">Paella de Marisco</span>
+                    </div>
+                </div>
+                <div class="about-card animate-on-scroll">
+                    <div class="about-card-icon">🍺</div>
+                    <h3>Cerveja Artesanal & Esplanada</h3>
+                    <p>Seleção exclusiva de cervejas artesanais locais e nacionais, perfeitas para harmonizar com mariscos numa esplanada agradável na Baixa de Lisboa.</p>
+                    <div class="about-card-footer">
+                        <span class="card-tag">Cerveja Artesanal</span>
+                        <span class="card-tag">Rua Augusta</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Showcase -->
+    <section class="showcase-section">
+        <div class="showcase-grid">
+            <div class="showcase-item showcase-large animate-on-scroll">
+                <img src="images/showcase_location.jpg" alt="Gelo Augusta Rua Augusta Lisboa" loading="lazy">
+                <div class="showcase-caption">
+                    <span>Localização Exclusiva</span>
+                    <h3>Rua Augusta, Baixa de Lisboa</h3>
+                </div>
+            </div>
+            <div class="showcase-item animate-on-scroll">
+                <img src="images/showcase_product1.jpg" alt="Mariscada Especial Gelo Augusta" loading="lazy">
+                <div class="showcase-caption">
+                    <span>Especialidade</span>
+                    <h3>Mariscada & Sapateira Recheada</h3>
+                </div>
+            </div>
+            <div class="showcase-item animate-on-scroll">
+                <img src="images/showcase_product2.jpg" alt="Paella Live Cooking" loading="lazy">
+                <div class="showcase-caption">
+                    <span>Ao Vivo</span>
+                    <h3>Paella de Marisco Live Cooking</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diagnostic Section -->
+    <section class="section diagnostic-section" id="diagnostico">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Diagnóstico</span>
+                <h2 class="section-title">O Desafio Atual</h2>
+                <p class="section-desc">Análise detalhada da presença digital e oportunidades de crescimento do Gelo Augusta</p>
+            </div>
+            <div class="diagnostic-grid">
+                <div class="diagnostic-card animate-on-scroll" data-delay="0">
+                    <div class="diag-number">01</div>
+                    <h3>Concorrência Intensa na Baixa de Lisboa</h3>
+                    <p>A zona da Rua Augusta, Rossio e Terreiro do Paço tem <strong>dezenas de restaurantes a disputar turistas</strong>. Sem anúncios no topo do Google Ads, o Gelo Augusta depende da passagem a pé — perdendo centenas de clientes/mês que pesquisam <strong>"marisqueira lisboa"</strong> ou <strong>"best seafood near me"</strong> no telemóvel.</p>
+                    <div class="diag-impact">
+                        <span class="impact-label">Impacto</span>
+                        <div class="impact-bar"><div class="impact-fill" style="width: 95%"></div></div>
+                        <span class="impact-value">Máximo</span>
+                    </div>
+                </div>
+                <div class="diagnostic-card animate-on-scroll" data-delay="1">
+                    <div class="diag-number">02</div>
+                    <h3>Google Maps com Forte Oportunidade</h3>
+                    <p>O perfil do Gelo Augusta no Google Maps tem boa reputação, mas faltam <strong>posts semanais com destaques da Paella ao vivo e pratos de marisco</strong>, além de respostas rápidas às avaliações. Restaurantes com perfil ativamente gerido no Google recebem <strong>520% mais chamadas e pedidos de rota</strong>.</p>
+                    <div class="diag-impact">
+                        <span class="impact-label">Impacto</span>
+                        <div class="impact-bar"><div class="impact-fill" style="width: 90%"></div></div>
+                        <span class="impact-value">Crítico</span>
+                    </div>
+                </div>
+                <div class="diagnostic-card animate-on-scroll" data-delay="2">
+                    <div class="diag-number">03</div>
+                    <h3>Turistas Pesquisam Antes de Decidir</h3>
+                    <p>Mais de 80% dos turistas em Lisboa pesquisam no telemóvel <strong>"seafood terrace lisbon"</strong> ou <strong>"paella downtown"</strong> antes de escolher onde almoçar ou jantar. Campanhas geolocalizadas garantem que o Gelo Augusta seja a primeira opção a aparecer.</p>
+                    <div class="diag-impact">
+                        <span class="impact-label">Impacto</span>
+                        <div class="impact-bar"><div class="impact-fill" style="width: 85%"></div></div>
+                        <span class="impact-value">Alto</span>
+                    </div>
+                </div>
+                <div class="diagnostic-card animate-on-scroll" data-delay="3">
+                    <div class="diag-number">04</div>
+                    <h3>Divulgação do Live Cooking & Cerveja Artesanal</h3>
+                    <p>O conceito diferenciado do <strong>Live Cooking de Paella</strong> e da carta de <strong>Cervejas Artesanais</strong> tem enorme apelo em redes sociais e no Google, mas precisa de anúncios segmentados para atrair grupos, famílias e apreciadores de boa gastronomia marítima.</p>
+                    <div class="diag-impact">
+                        <span class="impact-label">Impacto</span>
+                        <div class="impact-bar"><div class="impact-fill" style="width: 88%"></div></div>
+                        <span class="impact-value">Alto</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Section -->
+    <section class="section strategy-section" id="estrategia">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Estratégia</span>
+                <h2 class="section-title">O Plano de Ação</h2>
+                <p class="section-desc">Estratégia integrada de Google Ads + Google Meu Negócio personalizada para o Gelo Augusta</p>
+            </div>
+
+            <!-- Google Ads Strategy -->
+            <div class="strategy-block animate-on-scroll">
+                <div class="strategy-block-header">
+                    <div class="strategy-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div>
+                        <h3>Google Ads — Campanhas Estratégicas</h3>
+                        <p>Anúncios que aparecem exatamente no momento em que o cliente procura por marisco e cervejaria</p>
+                    </div>
+                </div>
+                <div class="strategy-cards">
+                    <div class="strat-card">
+                        <div class="strat-card-badge">Campanha 1</div>
+                        <h4>🎯 Pesquisa Local — Marisqueira & Seafood</h4>
+                        <p>Anúncios para buscas de alta intenção em Lisboa:</p>
+                        <div class="keyword-list">
+                            <span class="keyword">"marisqueira lisboa"</span>
+                            <span class="keyword">"melhor marisco lisboa"</span>
+                            <span class="keyword">"seafood restaurant lisbon"</span>
+                            <span class="keyword">"sapateira recheada lisboa"</span>
+                            <span class="keyword">"best seafood lisbon"</span>
+                            <span class="keyword">"lagosta lisboa"</span>
+                            <span class="keyword">"marisco baixa lisboa"</span>
+                        </div>
+                        <div class="strat-meta">
+                            <span>📍 Raio de 5km da Rua Augusta</span>
+                            <span>🌍 PT + EN + ES + FR</span>
+                        </div>
+                    </div>
+                    <div class="strat-card">
+                        <div class="strat-card-badge">Campanha 2</div>
+                        <h4>📍 Google Maps — Baixa & Rua Augusta</h4>
+                        <p>Anúncios no topo do Google Maps quando turistas e locais pesquisam por restaurantes na zona:</p>
+                        <div class="keyword-list">
+                            <span class="keyword">"marisqueira perto de mim"</span>
+                            <span class="keyword">"seafood near me"</span>
+                            <span class="keyword">"restaurante rua augusta"</span>
+                            <span class="keyword">"almoço esplanada baixa"</span>
+                        </div>
+                        <div class="strat-meta">
+                            <span>📱 Otimizado para Mobile</span>
+                            <span>⏰ Horário de Funcionamento</span>
+                        </div>
+                    </div>
+                    <div class="strat-card">
+                        <div class="strat-card-badge">Campanha 3</div>
+                        <h4>🥘 Paella Live & Cerveja Artesanal</h4>
+                        <p>Anúncios específicos para captar quem busca experiências gastronómicas diferenciadas:</p>
+                        <div class="keyword-list">
+                            <span class="keyword">"paella lisboa"</span>
+                            <span class="keyword">"paella ao vivo lisboa"</span>
+                            <span class="keyword">"cerveja artesanal lisboa"</span>
+                            <span class="keyword">"cervejaria baixa lisboa"</span>
+                            <span class="keyword">"arroz de marisco lisboa"</span>
+                        </div>
+                        <div class="strat-meta">
+                            <span>🍽️ Foco em Conversão</span>
+                            <span>📸 Extensões de Fotos de Pratos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google My Business Strategy -->
+            <div class="strategy-block animate-on-scroll">
+                <div class="strategy-block-header">
+                    <div class="strategy-icon gmb">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+                    </div>
+                    <div>
+                        <h3>Google Meu Negócio — Otimização Completa</h3>
+                        <p>Maximizar a presença do Gelo Augusta no Google Maps e pesquisas locais</p>
+                    </div>
+                </div>
+                <div class="gmb-grid">
+                    <div class="gmb-item">
+                        <div class="gmb-icon">📸</div>
+                        <h4>Fotos Profissionais</h4>
+                        <p>Upload semanal de fotos de mariscadas, paella ao vivo, esplanada e cervejas artesanais. Perfis com fotos atualizadas recebem <strong>+520% mais chamadas</strong>.</p>
+                    </div>
+                    <div class="gmb-item">
+                        <div class="gmb-icon">📝</div>
+                        <h4>Posts Semanais</h4>
+                        <p>Publicações regulares de pratos do dia, eventos de Paella ao vivo e destaques de cervejas. Mantém a ficha ativa e no topo do ranking.</p>
+                    </div>
+                    <div class="gmb-item">
+                        <div class="gmb-icon">⭐</div>
+                        <h4>Gestão de Reviews</h4>
+                        <p>Resposta profissional a todas as avaliações em 24h. Estratégia ativa para captar mais avaliações 5 estrelas de turistas e moradores.</p>
+                    </div>
+                    <div class="gmb-item">
+                        <div class="gmb-icon">📊</div>
+                        <h4>Atributos & Categorias</h4>
+                        <p>Otimização de categorias ("Seafood Restaurant", "Brewery", "Paella Restaurant"), menu completo, horários e atributos (Esplanada, Wi-Fi, etc).</p>
+                    </div>
+                    <div class="gmb-item">
+                        <div class="gmb-icon">❓</div>
+                        <h4>Q&A Estratégico</h4>
+                        <p>Preenchimento de perguntas frequentes sobre reservas, pratos de marisco, menu de grupo e opções vegetarianas.</p>
+                    </div>
+                    <div class="gmb-item">
+                        <div class="gmb-icon">🎯</div>
+                        <h4>Relatórios Mensais</h4>
+                        <p>Relatório detalhado de chamadas, visualizações, pedidos de rota e comparação direta de crescimento mês a mês.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="section results-section" id="resultados">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Projeção de Resultados</span>
+                <h2 class="section-title">O Que Esperar</h2>
+                <p class="section-desc">Projeções baseadas em dados do setor de marisqueiras e restauração na Baixa de Lisboa</p>
+            </div>
+
+            <div class="results-dashboard animate-on-scroll">
+                <img src="images/dashboard.jpg" alt="Dashboard de Performance Gelo Augusta" class="results-dashboard-img" loading="lazy">
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card animate-on-scroll">
+                    <div class="result-icon">📈</div>
+                    <div class="result-metric">
+                        <span class="result-number" data-count="600">0</span>
+                        <span class="result-suffix">-1.200</span>
+                    </div>
+                    <h4>Cliques/Mês</h4>
+                    <p>Potenciais clientes a clicar nos anúncios quando pesquisam marisqueira e comida em Lisboa</p>
+                    <div class="result-detail">
+                        <span>CPC médio estimado: €0,35 - €0,85</span>
+                    </div>
+                </div>
+                <div class="result-card animate-on-scroll">
+                    <div class="result-icon">📞</div>
+                    <div class="result-metric">
+                        <span class="result-number" data-count="120">0</span>
+                        <span class="result-suffix">-220</span>
+                    </div>
+                    <h4>Chamadas/Mês</h4>
+                    <p>Chamadas diretas de reservas via anúncios e perfil no Google Maps</p>
+                    <div class="result-detail">
+                        <span>Reservas diretas de mesas</span>
+                    </div>
+                </div>
+                <div class="result-card animate-on-scroll">
+                    <div class="result-icon">🗺️</div>
+                    <div class="result-metric">
+                        <span class="result-number" data-count="300">0</span>
+                        <span class="result-suffix">-600</span>
+                    </div>
+                    <h4>Pedidos de Rota/Mês</h4>
+                    <p>Turistas e clientes a pedir direções via Google Maps até à Rua Augusta</p>
+                    <div class="result-detail">
+                        <span>Visitas diretas ao restaurante</span>
+                    </div>
+                </div>
+                <div class="result-card animate-on-scroll">
+                    <div class="result-icon">🌐</div>
+                    <div class="result-metric">
+                        <span class="result-number" data-count="25000">0</span>
+                        <span class="result-suffix">+</span>
+                    </div>
+                    <h4>Impressões/Mês</h4>
+                    <p>Exposições da marca Gelo Augusta nas pesquisas de marisco em Lisboa</p>
+                    <div class="result-detail">
+                        <span>Dominância na zona da Baixa</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline animate-on-scroll">
+                <h3 class="timeline-title">Cronograma de Resultados</h3>
+                <div class="timeline-track">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Mês 1-2</h4>
+                            <span class="timeline-phase">Setup & Otimização</span>
+                            <p>Configuração de campanhas, otimização do perfil Google Maps do Gelo Augusta e início das campanhas de marisco e paella.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot active"></div>
+                        <div class="timeline-content">
+                            <h4>Mês 3-4</h4>
+                            <span class="timeline-phase">Crescimento</span>
+                            <p>Otimização por termos de busca mais rentáveis, aumento no volume de chamadas para reservas e pedidos de rota na Rua Augusta.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Mês 5-6</h4>
+                            <span class="timeline-phase">Performance Máxima</span>
+                            <p>Campanhas com o menor custo por clique, fluxo constante de clientes na esplanada e retorno previsível.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROI Calculator -->
+            <div class="roi-section animate-on-scroll">
+                <h3 class="roi-title">Estimativa de Retorno (ROI)</h3>
+                <div class="roi-grid">
+                    <div class="roi-card">
+                        <span class="roi-label">Ticket Médio Estimado</span>
+                        <span class="roi-value">€35</span>
+                        <span class="roi-note">por pessoa</span>
+                    </div>
+                    <div class="roi-card">
+                        <span class="roi-label">Novos Clientes/Mês (est.)</span>
+                        <span class="roi-value">80-160</span>
+                        <span class="roi-note">via Google Ads + Maps</span>
+                    </div>
+                    <div class="roi-card highlight">
+                        <span class="roi-label">Receita Adicional Estimada</span>
+                        <span class="roi-value">€2.800 - €5.600</span>
+                        <span class="roi-note">por mês</span>
+                    </div>
+                    <div class="roi-card">
+                        <span class="roi-label">ROI Estimado</span>
+                        <span class="roi-value">3.5x — 7x</span>
+                        <span class="roi-note">retorno sobre investimento total</span>
+                    </div>
+                </div>
+                <p class="roi-disclaimer">* Cálculo: 80-160 novos clientes × €35 ticket médio = €2.800-€5.600 de receita adicional mensal. Com investimento total mensal de ~€800 (serviço) + ~€450-600 (ads), o retorno estimado é de 3.5x a 7x.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="section included-section" id="incluido">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Escopo do Serviço</span>
+                <h2 class="section-title">O Que Está Incluído</h2>
+            </div>
+            <div class="included-grid">
+                <div class="included-col">
+                    <h3 class="included-col-title">
+                        <span class="included-icon">🔍</span>
+                        Google Ads
+                    </h3>
+                    <ul class="included-list">
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Criação e configuração da conta Google Ads do Gelo Augusta</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Pesquisa de palavras-chave (PT, EN, ES, FR)</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Criação de 3 campanhas estratégicas (Marisco, Maps, Paella/Cerveja)</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Anúncios com extensões de localização, chamadas e menu</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Segmentação geográfica (Baixa de Lisboa + raio de turistas)</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Programação por horário de almoço e jantar</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Otimização contínua de lances e palavras-chave</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Testes A/B de anúncios</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Relatório mensal de performance</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="included-col">
+                    <h3 class="included-col-title">
+                        <span class="included-icon">📍</span>
+                        Google Meu Negócio
+                    </h3>
+                    <ul class="included-list">
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Auditoria e otimização completa da ficha no Google Maps</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Otimização de categorias (Marisqueira, Cervejaria, Paella)</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Upload semanal de fotos de mariscos e pratos</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Publicação semanal de posts e ofertas em destaque</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Gestão de perguntas e respostas (Q&A)</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Resposta a todas as avaliações de clientes</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Estratégia para aumento de avaliações 5 estrelas</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Menu digital atualizado</span>
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            <span>Relatório mensal de métricas</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Section -->
+    <section class="section investment-section" id="investimento">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">Investimento</span>
+                <h2 class="section-title">Valor dos Serviços</h2>
+                <p class="section-desc">Transparência total — sem custos ocultos</p>
+            </div>
+
+            <div class="pricing-two-col animate-on-scroll">
+
+                <!-- Service 1: Traffic Management -->
+                <div class="pricing-card">
+                    <div class="pricing-ribbon">Serviço 1</div>
+                    <div class="pricing-header">
+                        <h3>Gestão de Tráfego Pago</h3>
+                        <p>Google Ads + Google Meu Negócio</p>
+                    </div>
+                    <div class="pricing-value">
+                        <span class="currency">€</span>
+                        <span class="price">300</span>
+                        <span class="period">/mês</span>
+                        <span class="setup-badge">+ €150 setup</span>
+                    </div>
+                    <p class="pricing-note">Fee de gestão mensal + taxa única de implementação e configuração inicial (cobrada apenas no 1º mês)</p>
+                    
+                    <div class="pricing-divider"></div>
+                    
+                    <div class="pricing-investment">
+                        <h4>Investimento Publicitário (Google Ads)</h4>
+                        <p class="investment-note">O valor investido em publicidade é pago diretamente ao Google. Recomendamos para o Gelo Augusta:</p>
+                        <div class="investment-options">
+                            <div class="invest-option">
+                                <span class="invest-label">Mínimo Recomendado</span>
+                                <span class="invest-value">€10/dia</span>
+                                <span class="invest-monthly">(~€300/mês)</span>
+                            </div>
+                            <div class="invest-option recommended">
+                                <span class="invest-badge">💡 Ideal</span>
+                                <span class="invest-label">Investimento Ideal</span>
+                                <span class="invest-value">€15-20/dia</span>
+                                <span class="invest-monthly">(~€450-600/mês)</span>
+                            </div>
+                            <div class="invest-option">
+                                <span class="invest-label">Performance Máxima</span>
+                                <span class="invest-value">€25-30/dia</span>
+                                <span class="invest-monthly">(~€750-900/mês)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Content Production -->
+                <div class="pricing-card">
+                    <div class="pricing-ribbon">Serviço 2</div>
+                    <div class="pricing-header">
+                        <h3>Pacote Mensal de Produção de Conteúdo</h3>
+                        <p>Captação & Edição Profissional</p>
+                    </div>
+                    <div class="pricing-value">
+                        <span class="currency">€</span>
+                        <span class="price">500</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <p class="pricing-note">Produção completa de conteúdo audiovisual para redes sociais</p>
+                    
+                    <div class="pricing-divider"></div>
+                    
+                    <div class="content-package-details">
+                        <h4>O Pacote Inclui:</h4>
+                        <ul class="content-list">
+                            <li>
+                                <span class="content-check">✓</span>
+                                <span><strong>3 vídeos verticais (Reels)</strong> por semana</span>
+                            </li>
+                            <li>
+                                <span class="content-check">✓</span>
+                                <span><strong>10 fotografias profissionais</strong> por semana</span>
+                            </li>
+                            <li>
+                                <span class="content-check">✓</span>
+                                <span>Captação e edição profissional de mariscadas e pratos</span>
+                            </li>
+                            <li>
+                                <span class="content-check">✓</span>
+                                <span>Produção realizada em <strong>1 dia de captação mensal</strong></span>
+                            </li>
+                        </ul>
+
+                        <div class="content-equipment">
+                            <h5>🎬 Equipamento Profissional</h5>
+                            <p>Produção feita com câmaras <strong>Sony</strong> e <strong>Canon</strong>, lentes <strong>Sigma</strong> e microfones de alta fidelidade para garantir a máxima qualidade visual e sonora do Live Cooking.</p>
+                        </div>
+
+                        <div class="content-workflow">
+                            <h5>📋 Processo de Trabalho</h5>
+                            <p>Ideias e roteiros focados nas especialidades da casa (Paellas ao vivo, sapateiras e cervejas artesanais), produzidos no dia mensal de captação.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Total Summary -->
+            <div class="total-summary animate-on-scroll">
+                <h3 class="total-summary-title">Resumo do Investimento</h3>
+                
+                <div class="total-cards">
+                    <!-- 1st Month -->
+                    <div class="total-card first-month">
+                        <div class="total-card-badge">1º Mês</div>
+                        <div class="total-card-header">
+                            <h4>Primeiro Mês</h4>
+                            <span class="total-card-sub">(inclui setup de implementação)</span>
+                        </div>
+                        <div class="total-breakdown">
+                            <div class="breakdown-row">
+                                <span>Gestão de Tráfego</span>
+                                <span>€300</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Setup de Implementação</span>
+                                <span>€150</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Produção de Conteúdo</span>
+                                <span>€500</span>
+                            </div>
+                            <div class="breakdown-row breakdown-total">
+                                <span>Total 1º Mês</span>
+                                <span class="total-price">€950</span>
+                            </div>
+                        </div>
+                        <p class="total-card-note">+ investimento publicitário Google Ads (a cargo do cliente)</p>
+                    </div>
+
+                    <!-- Subsequent Months -->
+                    <div class="total-card recurring">
+                        <div class="total-card-badge recurring-badge">Meses Seguintes</div>
+                        <div class="total-card-header">
+                            <h4>A Partir do 2º Mês</h4>
+                            <span class="total-card-sub">(sem taxa de setup)</span>
+                        </div>
+                        <div class="total-breakdown">
+                            <div class="breakdown-row">
+                                <span>Gestão de Tráfego</span>
+                                <span>€300</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Produção de Conteúdo</span>
+                                <span>€500</span>
+                            </div>
+                            <div class="breakdown-row breakdown-total">
+                                <span>Total Mensal</span>
+                                <span class="total-price">€800</span>
+                            </div>
+                        </div>
+                        <p class="total-card-note">+ investimento publicitário Google Ads (a cargo do cliente)</p>
+                    </div>
+                </div>
+
+                <!-- Minimum Contract -->
+                <div class="contract-minimum">
+                    <span class="contract-icon">📋</span>
+                    <div class="contract-text">
+                        <strong>Contrato mínimo de 8 meses</strong>
+                        <p>Para garantir resultados consistentes e otimização contínua das campanhas e conteúdos do Gelo Augusta.</p>
+                    </div>
+                </div>
+
+                <a href="#contato" class="btn btn-primary btn-full">
+                    <span>Aceitar Proposta</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <!-- Guarantees -->
+            <div class="guarantees animate-on-scroll">
+                <div class="guarantee-item">
+                    <span class="guarantee-icon">📊</span>
+                    <div>
+                        <h4>Transparência Total</h4>
+                        <p>Acesso completo à conta Google Ads — tudo é vosso</p>
+                    </div>
+                </div>
+                <div class="guarantee-item">
+                    <span class="guarantee-icon">🎯</span>
+                    <div>
+                        <h4>Foco em Resultados</h4>
+                        <p>Relatórios mensais com métricas claras de reservas e chamadas</p>
+                    </div>
+                </div>
+                <div class="guarantee-item">
+                    <span class="guarantee-icon">💬</span>
+                    <div>
+                        <h4>Suporte Dedicado</h4>
+                        <p>Comunicação direta via WhatsApp para dúvidas e ajustes</p>
+                    </div>
+                </div>
+                <div class="guarantee-item">
+                    <span class="guarantee-icon">🎬</span>
+                    <div>
+                        <h4>Conteúdo Premium</h4>
+                        <p>Equipamento profissional Sony, Canon, Sigma & Hollyland</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Contact Section -->
+    <section class="section cta-section" id="contato">
+        <div class="cta-bg">
+            <img src="images/hero_bg.jpg" alt="" class="cta-bg-img" loading="lazy">
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <span class="section-tag light">Próximos Passos</span>
+                <h2 class="cta-title">Pronto para Encher as Mesas do Gelo Augusta?</h2>
+                <p class="cta-text">
+                    Cada dia sem uma estratégia de tráfego pago na Rua Augusta é um dia em que potenciais clientes 
+                    estão a escolher outros restaurantes. Vamos mudar isso juntos.
+                </p>
+                <div class="cta-steps">
+                    <div class="cta-step">
+                        <span class="step-num">1</span>
+                        <span>Aprovação da proposta</span>
+                    </div>
+                    <div class="cta-step-arrow">→</div>
+                    <div class="cta-step">
+                        <span class="step-num">2</span>
+                        <span>Setup em 48h</span>
+                    </div>
+                    <div class="cta-step-arrow">→</div>
+                    <div class="cta-step">
+                        <span class="step-num">3</span>
+                        <span>Campanhas no ar</span>
+                    </div>
+                    <div class="cta-step-arrow">→</div>
+                    <div class="cta-step">
+                        <span class="step-num">4</span>
+                        <span>Resultados!</span>
+                    </div>
+                </div>
+                <div class="cta-actions">
+                    <a href="https://wa.me/351914183619" class="btn btn-primary btn-lg" target="_blank">
+                        <span>💬 Falar no WhatsApp</span>
+                    </a>
+                    <a href="mailto:" class="btn btn-outline btn-lg light">
+                        <span>✉️ Enviar Email</span>
+                    </a>
+                </div>
+                <p class="cta-urgency">
+                    ⚡ Proposta válida até <strong>30 de Setembro de 2026</strong>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">g</span>
+                    <span>Proposta Comercial — Gestão de Tráfego Pago & Conteúdo</span>
+                </div>
+                <div class="footer-info">
+                    <p>Preparada exclusivamente para <strong>Gelo Augusta</strong></p>
+                    <p class="footer-date">Setembro 2026</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Documento confidencial — Uso exclusivo para fins de avaliação comercial</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
